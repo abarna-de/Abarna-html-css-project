@@ -1,0 +1,94 @@
+<html>
+<head>
+</head>
+<style>
+body{
+background-color:#9e589f;
+}
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=email]
+{
+width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  }
+input[type=date]
+{
+width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  }
+
+input[type=submit] {
+  width: 100%;
+  background-color: pink;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size:20px;
+}
+
+input[type=submit]:hover {
+  background-color: #FB8DA0;
+  }
+</style>
+<body>
+<div>
+<h1 style="border-radius:50%"><center>REQUEST AN APPOINTMENT<center></h1></div>
+<div class="d"><h3>Find an Appointment</h3></div>
+<h5>Please note: This is a request only. The Beauty Parlour will contact you to confirm your appointment.</h5>
+</div>
+<form>
+<label for="Appointment">Select Appointment Type</label> 
+<select name="Appointment Type" id="Appointment">
+    <option value="Bang Trim">Bang Trim</option>
+	<option value="Haircut+style1">Haircut+style1</option>
+	<option value="Haircut+style2">Haircut+style2</option>
+	<option value="Haircut+style3">Haircut+style3</option>
+	<option value="New client Cut">New client Cut</option>
+	<option value="Blowout">Blowout</option>
+	<option value="Contioning Treatment">Contioning Treatment</option>
+	<option value="Root Retouch">Root Retouch</option>
+	<option value="Full Body Laser Treatment">Full Body Laser Treatment</option></select>
+<label for="Stylist">All Stylist</label>
+    <select name="Stylist" id="Stylist">
+    <option value="Dean">Dean</option>
+	<option value="Desiree">Desiree</option>
+	<option value="Gabby">Gabby</option>
+	<option value="Jamine">Jamine</option>
+	<option value="keterya">Keterya</option>
+	<option value="Nina">Nina</option>
+	<option value="Shannon">Shannon</option></select>
+<label for="email-id">Email-id</label>
+<input type ="email" id="email-id" name="Email-id" placeholder="Your Registered Email-id..">
+<label for="date">Appointment Date</label>
+<input type="date" id="dob">
+<a href="projectnavigation.html"><script>
+function msg()
+{
+alert("your appointment date will be book today.later,confirmation mail will came soon at your registration Email.id");
+}
+</script>
+<input type="submit" onclick="msg()" value="Search">
+</a>
+</body>
+</html>
